@@ -51,9 +51,40 @@ list1.reverse()
 
 
 
+list4=[1,2,5,6]
+print(max(list4))
+print(min(list4))
 
+list5=list1+list4
+print(list5)
+
+print("1 in list1",1 in list1)
+print("3 in list4",3 not in list4)
+print(list4*2)
+
+
+
+list7=[11,56,78]
+list7.append(25)
+print(list7)
+
+list7.extend("abc")
+print(list7)
 
 list2.append(22)
+print(list2)
+
+list1.append(list2)
+print(list1)
+
+list1.extend(list2)
+print(list1)
+
+print(list1[7][2])
+
+print(len(list1))
+
+list2.extend([1,2,3])
 print(list2)
 
 list2[7]=89
@@ -104,3 +135,10 @@ while i<len(list3):
     
 list2.count(89)
 list2.__contains__(89)
+
+
+
+
+
+
+
