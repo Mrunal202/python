@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Aug 25 05:56:46 2021
+Spyder Editor
 
-@author: Rajat
+This is a temporary script file.
 """
+
 list1=[1,2,3,'A','mrunal']
 print("list1 is:",list1)
 len(list1)
@@ -52,18 +53,23 @@ list1.reverse()
 
 
 list4=[1,2,5,6]
+
+#finding min max
 print(max(list4))
 print(min(list4))
 
+#concatenation
 list5=list1+list4
 print(list5)
 
+
+#in not in operator
 print("1 in list1",1 in list1)
 print("3 in list4",3 not in list4)
 print(list4*2)
 
 
-
+#append  ans extend
 list7=[11,56,78]
 list7.append(25)
 print(list7)
@@ -71,11 +77,15 @@ print(list7)
 list7.extend("abc")
 print(list7)
 
+list7.extend(["abc","xyz"])
+print(list7)
+
 list2.append(22)
 print(list2)
 
 list1.append(list2)
 print(list1)
+print(list1*1)
 
 list1.extend(list2)
 print(list1)
@@ -93,18 +103,49 @@ print(list2)
 list2[2:4]=20,"mrunal"
 print(list2)
 
-list2.insert(4, """cpp""")
-print(list2)
-list2.remove("cpp")
-print(list2)
 
-list2.pop(6)
-print(list2)
 
 
 
 list2[2]=55
 print(list2)
+
+l={'p':1}
+list2.append(l)
+list2.extend(l)
+print(list2)
+
+
+#insert
+
+print(list4)
+list4.insert(1,55)
+list4.insert(0,36)
+list4.insert(2,89)
+list4.insert(3,95)
+list4.sort()
+
+
+#index
+print("index of 89 is:",list4.index(89))
+print("length of list 4:",len(list4))
+
+list4.append(5)
+list4.append(5)
+
+
+#count
+print("count of 5 is",list4.count(5))
+print("count of 89 is",list4.count(89))
+
+
+#pop and remove
+
+list4.remove(95)
+list4.remove()
+
+list4.pop()
+list4.pop(2)
 
 '''' to check given element in list'''
 
@@ -135,10 +176,3 @@ while i<len(list3):
     
 list2.count(89)
 list2.__contains__(89)
-
-
-
-
-
-
-
