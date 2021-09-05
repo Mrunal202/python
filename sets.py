@@ -26,5 +26,24 @@ print(s)
 
 
 
-s1=(13,24,56,78)
+
+s1=(100,24,56,78,99)
 s2=(45,67,89,99)
+s33={45,99}
+s11=set(s1)
+s22=set(s2)
+print("set 1 is :",s11)
+print("set 2 is ",s22)
+print("intersection is:",s11&s22)
+print("union is:",s11|s22)
+print("symmetric difference is:",s11.symmetric_difference(s22))
+print("diference is:",s11-s22)
+print("s11>=s22",s11>=s22)
+print("s11<=s22",s11<=s22)
+print(s33.issubset(s22))
+print(s22.issuperset(s33))
+s11.isdisjoint(s22)
+
+s11.update(s22)
+s11.update(s2)
+
