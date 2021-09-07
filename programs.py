@@ -87,6 +87,63 @@ else:
     
     print("string is not pallindrome")
     
+    
+    ###
+    str1=input("enter the string:")
+    half=int(len(str1)/2)
+    print(half)
+    str2=str1[0:half]
+   
+    str3=str1[half:]
+   
+    if str2==str3:
+        print("string is symmetrical")
+    else:
+        print("string is not symmetrical")
+    
+    
+ #####sum of tuple elements
+t1=(1,2,3,5,4,6,7,8,9)
+print(len(t1))   
+sum1=0
+for i in range(0,len(t1)):
+    sum1=sum1+t1[i]
+    i=i+1
+
+print(sum1)
+
+
+
+####sum of a digit###
+
+n=int(input("enter the number:"))
+sum1=0
+while n!=0:
+    
+    sum1=sum1+(n%10)
+    n=n//10
+print(sum1)
+
+for i in range (100,200):
+    num=i
+    sum1=0
+    while num!=0:
+        sum1=sum1+(n%10)
+        num=num//10
+    if (sum1%2 ==0):
+        print(i)
+
+for i in range(100,200):
+    num = i
+    sum = 0
+    while(num!=0):
+        digit = num%10
+        sum = sum + digit
+        num = num//10
+    if(sum%2==0):
+        print(i)
+    
+    
     #factorial
 n=int(input("enter the number factorial number:"))
 fact=1
@@ -98,5 +155,46 @@ while i<=n:
 print(fact)
 
 
-#sum of 1 to 10
+###prime number
+n=int(input("enter the number:"))
+if n>1:
+    for i in range (2,n):
+        if n%i ==0:
+            print("number is not a prime number:")
+            break
+    else:
+            print("number is a prime number")
+else:
+    print("number is not prime")
+
+
+num =int(input("Enter the range: "))
+for n in range(1,num):
+    for i in range(2,n):
+        if(n%i==0):
+            break
+    else:
+        print(n)   
+
+
+##########date time
+import datetime
+ct=datetime.datetime.now()
+print(ct)
+ct=datetime.date(2021, 9, 6)
+print(ct)
+
+
+
+import datetime
+today=datetime.datetime.today()
+print("today is ",today)
+ct1=datetime.datetime.now()
+print("year is",ct1.year)
+print("month is",ct1.month)
+print("day is",ct1.day)
+print("time is hour",ct1.hour)
+print("time in min",ct1.minute)
+print("time in second",ct1.second)
+print("time in ms is",ct1.microsecond)
 

@@ -82,4 +82,56 @@ def List_append(list1,n):
 print("new list added is:",List_append([22,33,88],99))
 
 
+#addition of two numbers
+def add1(a,b):
+    return a+b
+
+a=int(input("enter first number"))
+b=int(input("enter second number"))
+print("addition is",add1(a,b))
+
+#area of circle
+def areaofc(r):
+    p=3.14
+    return p*r*r
+
+r=int(input("enter the radius of circle"))
+print("area of circle is",areaofc(r))
+
+
+#dictionary update
+def dictupdate(d1):
+    d1.update({"d":4})
+    print("keys are:",d1.keys())
+    print("values are:",d1.values())
+    return d1
+ 
+
+d1={"a":1,"b":2,"c":3}
+print("dictionary is ",dictupdate(d1))   
+#sum of n numbers
+
+def sumofn():
+    n=int(input("Enter the number range:"))
+    sum=0
+    for i in range(0,n+1):
+        sum=sum+i
+    return sum
     
+print("sum of a numbers is",sumofn())
+
+
+
+#sum of numbers from list
+def sumlist(l1):
+    sum=0
+    l2=l1.copy();
+    print(l2)
+    for i in range (0,len(l1)):
+        sum=sum+l1[i]
+    return sum
+
+
+l1=[1,2,3,4]
+print("Sum of list elements is",sumlist(l1))
+
