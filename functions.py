@@ -268,3 +268,30 @@ list2=[10,20,30,40]
 
 p=map(lambda x,y:x+y ,list1,list2)
 print(list(p))
+
+
+t1=(1,2,3,4)
+t2=(4,5,6,7,8)
+mul=map(lambda x,y:x+y-x,t1,t2)
+print(tuple(mul))
+
+
+
+#FILTER FUNCTION#######
+
+list1=[10,50,49,85,65,15,21,32,9]
+result=filter(lambda x: x>50,list1)
+print(list(result))
+
+result1=filter(lambda x: x%2==0 or x%5==0 ,list1)
+print(list(result1))
+
+numlist=range(-10,2)
+lessthanzero=filter(lambda x: x<0,numlist)
+print(list(lessthanzero))
+
+########reduce
+
+from functools import reduce
+f=lambda a,b:a if (a>b ) else b
+print(reduce(f,[1,5,9,8,100,56]))
